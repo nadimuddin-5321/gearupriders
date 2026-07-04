@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GearUp Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/css/admin.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>GearUp</h2>
+
+    <ul>
+
+    <li class="active">Dashboard</li>
+
+    <li>Products</li>
+
+    <li id="logoutBtn">Logout</li>
+
+</ul>
+
+</div>
+
+
+<div class="main-content">
+
+    <div class="topbar">
+
+        <h1>GearUp Admin Panel</h1>
+
+        <span>Welcome Admin 👋</span>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h2>Total Products</h2>
+
+            <p id="totalProducts">0</p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Total Categories</h2>
+
+            <p id="totalCategories">0</p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Total Images</h2>
+
+            <p id="totalImages">0</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="product-form">
+
+        <h2>Add New Product</h2>
+
+        <input
+            type="text"
+            id="productName"
+            placeholder="Product Name">
+
+        <textarea
+            id="productDescription"
+            placeholder="Product Description"></textarea>
+
+        <input
+            type="number"
+            id="productPrice"
+            placeholder="Original Price">
+
+        <input
+            type="number"
+            id="offerPrice"
+            placeholder="Offer Price (Optional)">
+
+        <input
+            type="text"
+            id="productCategory"
+            placeholder="Category">
+
+        <input
+            type="file"
+            id="productImages"
+            multiple>
+
+            <input
+    type="text"
+    id="productBrand"
+    placeholder="Bike Brand (Royal Enfield, KTM, Yamaha...)">
+
+<input
+    type="text"
+    id="productVehicle"
+    placeholder="Vehicle Model (Classic 350, Hunter 350...)">
+
+        <button id="saveBtn">
+
+            Save Product
+
+        </button>
+
+    </div>
+
+
+    <div class="product-list">
+
+        <h2>All Products</h2>
+
+        <div id="productsContainer">
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="module" src="js/firebase-config.js"></script>
+
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+
+</html>
